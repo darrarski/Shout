@@ -19,11 +19,11 @@ extension ShoutTests {
     ]
 }
 
-#if !os(macOS)
-public func __allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(SFTPTests.__allTests),
-        testCase(ShoutTests.__allTests),
-    ]
-}
-#endif
+//#if !os(macOS)
+//public func __allTests() -> [XCTestCaseEntry] {
+//    return [
+//        testCase(SFTPTests.__allTests),
+//        testCase(ShoutTests.__allTests),
+//    ]
+//}
+//#endif

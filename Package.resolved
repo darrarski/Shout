@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Socket",
-        "repositoryURL": "https://github.com/IBM-Swift/BlueSocket",
-        "state": {
-          "branch": null,
-          "revision": "c9894fd117457f1d006575fbfb2fdfd6f79eac03",
-          "version": "1.0.200"
-        }
-      },
-      {
-        "package": "CSSH",
-        "repositoryURL": "https://github.com/DimaRU/Libssh2Prebuild.git",
-        "state": {
-          "branch": null,
-          "revision": "631d39784b593505a1b37341cda80055363bc753",
-          "version": "1.9.0+OpenSSL_1_1_1h"
-        }
+  "pins" : [
+    {
+      "identity" : "bluesocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IBM-Swift/BlueSocket.git",
+      "state" : {
+        "revision" : "c9894fd117457f1d006575fbfb2fdfd6f79eac03",
+        "version" : "1.0.200"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "libssh2prebuild",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DimaRU/Libssh2Prebuild.git",
+      "state" : {
+        "branch" : "1.10.0+OpenSSL_1_1_1o",
+        "revision" : "a91bcf205a6cbc84144f840c44145656abbd266a"
+      }
+    }
+  ],
+  "version" : 2
 }
