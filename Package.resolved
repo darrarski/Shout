@@ -8,15 +8,6 @@
         "revision" : "c9894fd117457f1d006575fbfb2fdfd6f79eac03",
         "version" : "1.0.200"
       }
-    },
-    {
-      "identity" : "libssh2prebuild",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/DimaRU/Libssh2Prebuild.git",
-      "state" : {
-        "branch" : "1.10.0+OpenSSL_1_1_1o",
-        "revision" : "a91bcf205a6cbc84144f840c44145656abbd266a"
-      }
     }
   ],
   "version" : 2

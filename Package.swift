@@ -15,10 +15,6 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      url: "https://github.com/DimaRU/Libssh2Prebuild.git",
-      branch: "1.10.0+OpenSSL_1_1_1o"
-    ),
-    .package(
       url: "https://github.com/IBM-Swift/BlueSocket.git",
       .upToNextMajor(from: "1.0.46")
     ),
@@ -27,9 +23,8 @@ let package = Package(
     .target(
       name: "Shout",
       dependencies: [
-        .product(
-          name: "CSSH",
-          package: "Libssh2Prebuild"
+        .target(
+          name: "CSSH"
         ),
         .product(
           name: "Socket",
@@ -42,6 +37,11 @@ let package = Package(
       dependencies: [
         .target(name: "Shout"),
       ]
+    ),
+    .binaryTarget(
+      name: "CSSH",
+      url: "https://github.com/DimaRU/Libssh2Prebuild/releases/download/1.10.0+OpenSSL_1_1_1o/CSSH-1.10.0+OpenSSL_1_1_1o.xcframework.zip",
+      checksum: "ede00ee2151b2f29b48caf38aab1534e72a83c6c148d9ee05782e79a9e313e21"
     ),
   ]
 )
